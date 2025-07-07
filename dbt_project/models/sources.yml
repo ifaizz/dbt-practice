@@ -6,3 +6,5 @@ sources:
     tables:
       - name: users
       - name: orders_raw
+      - name: tcs_data
+        description: "Audit and tracking table for dbt runs"

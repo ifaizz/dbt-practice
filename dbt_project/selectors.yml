@@ -1,0 +1,6 @@
+selectors:
+  - name: daily_refresh
+    description: "Models that need to run daily for business ops"
+    definition:
+      method: tag
+      value: daily

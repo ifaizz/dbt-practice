@@ -1,3 +1,8 @@
+{{config(
+    materialized='view',
+    tags=['users', 'orders']
+)}}
+
 select 
     o.order_id,
     o.customer_id,

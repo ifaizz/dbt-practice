@@ -1,3 +1,9 @@
+{{config(
+    materialized='view',
+    tags=['orders', 'daily']
+)}}
+
+
 SELECT
     order_id,
     customer_id,

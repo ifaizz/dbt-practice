@@ -1,3 +1,8 @@
+{{config(
+    materialized='view',
+    tags=['users', 'premium']
+)}}
+
 select
     customer_id,
     full_name,
