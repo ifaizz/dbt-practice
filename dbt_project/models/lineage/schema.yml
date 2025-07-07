@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: clean_orders
+    description: Orders with cancelled entries removed
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+      - name: amount
+        tests:
+          - not_null
+  - name: joined_users_orders
+    description: Joined clean orders with users
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+      - name: email
+        tests:
+          - not_null
+  - name: filtered_metrics
+    description: Premium users with cleaned order metrics
+    

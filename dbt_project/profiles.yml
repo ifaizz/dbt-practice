@@ -1,0 +1,13 @@
+dbt_project:
+  outputs:
+    dev:
+      account: bi76516.eu-west-1
+      database: NDC_DEV_DATADEV_PII
+      authenticator: externalbrowser
+      role: SG-NEX-SNOW-UAT-DD-PII
+      schema: DBT_DE_USER_S02668
+      threads: 8
+      type: snowflake
+      user: S02668@NEWDAY.CO.UK
+      warehouse: NDC_UAT_DATADEV_WH
+  target: dev

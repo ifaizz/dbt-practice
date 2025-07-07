@@ -1,0 +1,8 @@
+version: 2
+sources:
+  - name: my_source
+    database: NDC_DEV_DATADEV_PII
+    schema: DBT_DE_USER_S02668
+    tables:
+      - name: users
+      - name: orders_raw
